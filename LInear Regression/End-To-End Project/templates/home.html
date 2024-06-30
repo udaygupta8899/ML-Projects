@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Data</title>
+</head>
+<body>
+    <form action="/predictdata" method="post">
+        <label for="Temperature">Temperature:</label>
+        <input type="text" id="Temperature" name="Temperature"><br><br>
+        <label for="RH">RH:</label>
+        <input type="text" id="RH" name="RH"><br><br>
+        <label for="Ws">Ws:</label>
+        <input type="text" id="Ws" name="Ws"><br><br>
+        <label for="Rain">Rain:</label>
+        <input type="text" id="Rain" name="Rain"><br><br>
+        <label for="FFMC">FFMC:</label>
+        <input type="text" id="FFMC" name="FFMC"><br><br>
+        <label for="DMC">DMC:</label>
+        <input type="text" id="DMC" name="DMC"><br><br>
+        <label for="ISI">ISI:</label>
+        <input type="text" id="ISI" name="ISI"><br><br>
+        <label for="Classes">Classes:</label>
+        <input type="text" id="Classes" name="Classes"><br><br>
+        <label for="Region">Region:</label>
+        <input type="text" id="Region" name="Region"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h2>
+       THE FWI prediction is {{results}}
+    </h2>
+   <body>
+</html>
